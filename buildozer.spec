@@ -1,20 +1,19 @@
 [app]
-
 title = TikTok Downloader
 package.name = tiktokdownloader
 package.domain = org.test
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
-requirements = python3,kivy,yt-dlp,certifi,urllib3
-android.permissions = INTERNET, READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE
-android.archs = arm64-v8a, armeabi-v7a
-android.minapi = 21
-android.api = 33
+
+# Khai báo các thư viện Python ứng dụng yêu cầu
+requirements = python3,kivy,yt_dlp
+
 orientation = portrait
+osx.kivy_version = 2.3.0
 fullscreen = 0
+android.permissions = INTERNET
 
 [buildozer]
-
 log_level = 2
 warn_on_root = 1
