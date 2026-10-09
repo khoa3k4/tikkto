@@ -1,25 +1,20 @@
 [app]
+
 title = TikTok Downloader
-package.name = tikdownloader
-package.domain = com.example
+package.name = tiktokdownloader
+package.domain = org.test
 source.dir = .
-source.include_exts = py,kv,txt
-version = 1.0.0
-requirements = python3,kivy,yt-dlp,certifi,requests,urllib3,mutagen,pycryptodomex,websockets
+source.include_exts = py,png,jpg,kv,atlas
+version = 0.1
+requirements = python3,kivy,yt-dlp,certifi,urllib3
+android.permissions = INTERNET, READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE
+android.archs = arm64-v8a, armeabi-v7a
+android.minapi = 21
+android.api = 33
 orientation = portrait
 fullscreen = 0
 
-# Android build settings
-android.permissions = INTERNET
-android.api = 33
-android.minapi = 23
-android.archs = arm64-v8a
-android.accept_sdk_license = True
-android.allow_backup = False
-
-# Avoid bundling development files
-source.exclude_dirs = .git,.github,__pycache__,bin,.buildozer
-
 [buildozer]
+
 log_level = 2
 warn_on_root = 1
